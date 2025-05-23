@@ -1,0 +1,599 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  }
+  html {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    background: #f9f9f9;
+    color: #333;
+    line-height: 1.6;
+  }
+ h2{
+  text-align: center;
+  margin-bottom: 15px;
+ }
+  header {
+    background: linear-gradient(to right,#004080,#3276ba);
+    color: white;
+    padding: 2rem 1rem;
+    text-align: center;
+  }
+  header h1 {
+    font-size: 2.5rem;
+  }
+  header p {
+    font-size: 1.2rem;
+  }
+  nav {
+    background: radial-gradient(circle,#00264d,#06284a);
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+  nav a {
+    color: white;
+    padding: 1rem;
+    text-decoration: none;
+  }
+  nav a:hover {
+    background: #003366;
+  }
+  .container {
+    padding: 2rem;
+    max-width: 1200px;
+    margin: auto;
+  }
+  .features {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 1.5rem;
+    
+
+  }
+  .feature-box {
+    background: white;
+    border: 1px solid #ddd;
+    padding: 1rem;
+    text-align: left;
+    border-radius: 8px;
+    transition: transform 0.3s;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  }
+  .feature-box:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  }
+  .feature-box img {
+    vertical-align: middle;
+    margin-right: 10px;
+    height: 30px;
+  }
+  .feature-box span {
+    vertical-align: middle;
+    font-weight: bold;
+  }
+  .feature-box p {
+    font-size: 0.9rem;
+    margin-top: 0.5rem;
+  }
+  .feature-box button {
+    margin-top: 0.5rem;
+    background: #004080;
+    color: white;
+    border: none;
+    padding: 0.5rem 1rem;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+  }
+  .feature-box button:hover {
+    background: #003366;
+    transform: translateY(-3px);
+  }
+  section.testimonials, section.about, section.faq {
+    margin-top: 2rem;
+  }
+  footer {
+    text-align: center;
+    padding: 1rem;
+    background: #004080;
+    color: white;
+    margin-top: 2rem;
+  }
+  @media (max-width: 768px) {
+    header h1 { font-size: 2rem; }
+    .feature-box img { height: 24px; }
+  }
+
+  /* Styles for Why Choose Together Academy section */
+  .why-choose {
+    padding: 2rem 1rem;
+  }
+
+  .why-choose h2 {
+    text-align: center;
+    color: #004080;
+    margin-bottom: 1.5rem;
+  }
+
+  .choose-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 1.5rem;
+    max-width: 1000px;
+    margin: auto;
+  }
+
+  .choose-box {
+    background: white;
+    padding: 1.5rem;
+    border-radius: 10px;
+    text-align: center;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+    transition: transform 0.3s;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  }
+
+  .choose-box:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  }
+
+  .choose-box i {
+    font-size: 2rem;
+    color: #004080;
+    margin-bottom: 0.5rem;
+  }
+
+  .choose-box p {
+    font-weight: 500;
+    font-size: 1rem;
+  }
+
+  .sujal {
+    height: 15px;
+    width: 27px;
+    object-fit: contain;
+  }
+
+  /* Modal styles */
+  .modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.4); /* Black with opacity */
+    overflow: auto;
+  }
+  .modal-content {
+    background-color: #fefefe;
+    margin: 15% auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%;
+    max-width: 500px;
+    border-radius: 8px;
+  }
+  .modal-content ul li {
+     margin-bottom: 10px; 
+    line-height: 1.2;     
+}
+  .close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+  }
+  .close:hover,
+  .close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+  }
+
+  
+  /* Modal styles c++*/
+  .modal1 {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.4); /* Black with opacity */
+    overflow: auto;
+  }
+  .modal-content1 {
+    background-color: #fefefe;
+    margin: 15% auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%;
+    max-width: 500px;
+    border-radius: 8px;
+  }
+  .modal-content1 ul li {
+     margin-bottom: 10px; 
+    line-height: 1.2;     
+}
+  .close1 {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+  }
+  .close1:hover,
+  .close1:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+  }
+
+  /* Modal styles JAVA + adv java*/
+  .modal2 {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.4); /* Black with opacity */
+    overflow: auto;
+  }
+  .modal-content2 {
+    background-color: #fefefe;
+    margin: 15% auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%;
+    max-width: 500px;
+    border-radius: 8px;
+  }
+  .modal-content2 ul li {
+     margin-bottom: 10px; 
+    line-height: 1.2;   
+    
+}
+
+  .close2 {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+  }
+  .close2:hover,
+  .close2:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+  }
+
+  /* Modal styles Python + adv Python*/
+  .modal3 {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.4); /* Black with opacity */
+    overflow: auto;
+  }
+  .modal-content3 {
+    background-color: #fefefe;
+    margin: 15% auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%;
+    max-width: 500px;
+    border-radius: 8px;
+  }
+  .modal-content3 ul li {
+     margin-bottom: 10px; 
+    line-height: 1.2;     
+}
+  .close3 {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+  }
+  .close3:hover,
+  .close3:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+  }
+
+  /* Modal styles Mysql dbms*/
+  .modal4 {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.4); /* Black with opacity */
+    overflow: auto;
+  }
+  .modal-content4 {
+    background-color: #fefefe;
+    margin: 15% auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%;
+    max-width: 500px;
+    border-radius: 8px;
+  }
+  .modal-content4 ul li {
+     margin-bottom: 10px; 
+    line-height: 1.2;     
+}
+  .close4 {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+  }
+  .close4:hover,
+  .close4:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+  }
+
+  /* Modal styles html css*/
+  .modal5 {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.4); /* Black with opacity */
+    overflow: auto;
+  }
+  .modal-content5 {
+    background-color: #fefefe;
+    margin: 15% auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%;
+    max-width: 500px;
+    border-radius: 8px;
+  }
+  .modal-content5 ul li {
+     margin-bottom: 10px; 
+    line-height: 1.2;     
+}
+  .close5 {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+  }
+  .close5:hover,
+  .close5:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+  }
+
+  /* Modal styles javascript*/
+  .modal6 {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.4); /* Black with opacity */
+    overflow: auto;
+  }
+  .modal-content6 {
+    background-color: #fefefe;
+    margin: 15% auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%;
+    max-width: 500px;
+    border-radius: 8px;
+  }
+  .modal-content6 ul li {
+     margin-bottom: 10px; 
+    line-height: 1.2;     
+}
+  .close6 {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+  }
+  .close6:hover,
+  .close6:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+  }
+
+  /* Modal styles os linux*/
+  .modal7 {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.4); /* Black with opacity */
+    overflow: auto;
+  }
+  .modal-content7 {
+    background-color: #fefefe;
+    margin: 15% auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%;
+    max-width: 500px;
+    border-radius: 8px;
+  }
+  .modal-content7 ul li {
+     margin-bottom: 10px; 
+    line-height: 1.2;     
+}
+  .close7 {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+  }
+  .close7:hover,
+  .close7:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+  }
+
+  /* Modal styles dbms*/
+  .modal8 {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.4); /* Black with opacity */
+    overflow: auto;
+  }
+  .modal-content8 {
+    background-color: #fefefe;
+    margin: 15% auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%;
+    max-width: 500px;
+    border-radius: 8px;
+  }
+  .modal-content8 ul li {
+     margin-bottom: 10px; 
+    line-height: 1.2;     
+}
+  .close8 {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+  }
+  .close8:hover,
+  .close8:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+  }
+
+  /* Modal styles Linux*/
+  .modal9 {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.4); /* Black with opacity */
+    overflow: auto;
+  }
+  .modal-content9 {
+    background-color: #fefefe;
+    margin: 15% auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%;
+    max-width: 500px;
+    border-radius: 8px;
+  }
+  .modal-content9 ul li {
+     margin-bottom: 10px; 
+    line-height: 1.2;     
+}
+  .close9 {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+  }
+  .close9:hover,
+  .close9:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+  }
+  
+  /* Modal styles dt*/
+  .modal10 {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.4); /* Black with opacity */
+    overflow: auto;
+  }
+  .modal-content10 {
+    background-color: #fefefe;
+    margin: 15% auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%;
+    max-width: 500px;
+    border-radius: 8px;
+  }
+  .modal-content10 ul li {
+     margin-bottom: 10px; 
+    line-height: 1.2;     
+}
+  .close10 {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+  }
+  .close10:hover,
+  .close10:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+  }
+
+  /* to incrrease the syllabus text height */
+  .modal-content li, .modal-content1 li,.modal-content2 li,.modal-content3 li,.modal-content4 li,.modal-content5 li,.modal-content6 li,.modal-content7 li,.modal-content8 li,.modal-content9 li,.modal-content10 li {
+  font-size: 17px;
+  margin-top: 10px;
+  margin-left: 10px;
+  line-height: 1;
+  
+}
+
+ ol {
+    width: max-content;
+    margin: 0 auto; /* centers the list horizontally */
+    text-align: center; /* centers the text inside <li> */ 
+  }
+  

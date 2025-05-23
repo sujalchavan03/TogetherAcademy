@@ -1,0 +1,352 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Together Academy</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <header>
+    <h1>Together Academy</h1>
+    <p>No Magic, Only Logic! Master Coding with Experts</p>
+  </header>
+  <nav>
+    <a href="#courses">Courses</a>
+    <a href="#about">About</a>
+    <a href="#testimonials">Testimonials</a>
+    <a href="#enquiry">Enquiry</a>
+  </nav>
+
+  <div class="container" id="courses">
+    <h2 id="courses">Our Courses</h2>
+    <div class="features">
+      <div class="feature-box">
+        <img src="https://img.icons8.com/color/48/000000/c-programming.png">
+        <span>C Programming</span>
+        <p>Learn fundamentals of programming with structured approach.</p>
+        <button onclick="openModal()">View Syllabus</button>
+      </div>
+      <div class="feature-box">
+        <img src="https://img.icons8.com/color/48/000000/c-plus-plus-logo.png">
+        <span>C++ Programming</span>
+        <p>Master object-oriented programming with C++.</p>
+        <button onclick="openModal1()">View Syllabus</button>
+      </div>
+      <div class="feature-box">
+        <img src="https://img.icons8.com/color/48/000000/java-coffee-cup-logo.png">
+        <span>Java + Adv Java</span>
+        <p>Become proficient in Java and advanced Java concepts.</p>
+        <button onclick="openModal2()">View Syllabus</button>
+      </div>
+      <div class="feature-box">
+        <img src="https://img.icons8.com/color/48/000000/python.png">
+        <span>Python + Adv Python</span>
+        <p>Learn from basics to advanced Python with real projects.</p>
+        <button onclick="openModal3()">View Syllabus</button>
+      </div>
+      
+      <div class="feature-box">
+        <img src="https://img.icons8.com/color/48/html-5--v1.png">/
+        &nbsp;<img class="sujal" src="css.png" alt="">
+        <span>HTML / CSS</span>
+        <p>Design beautiful websites using HTML and CSS.</p>
+        <button onclick="openModal5()">View Syllabus</button>
+      </div>
+      <!-- <div class="feature-box">
+        <img src="https://img.icons8.com/color/48/bootstrap.png">  
+        <span>Bootstrap</span>
+        <p>Create responsive designs quickly using Bootstrap framework.</p>
+        <button onclick="openModal6()">View Syllabus</button>
+      </div> -->
+      <div class="feature-box">
+        <img src="https://img.icons8.com/color/48/javascript--v1.png">
+        <span>JavaScript</span>
+        <p>Learn interactivity and dynamic web development with JS.</p>
+        <button onclick="openModal6()">View Syllabus</button>
+      </div>
+
+      <div class="feature-box">
+        <img src="unnamed-removebg-preview.png">
+        <span>DBMS</span>
+        <p>Understand databases with SQL queries and DBMS concepts.</p>
+        <button onclick="openModal8()">View Syllabus</button>
+      </div>
+      
+      <div class="feature-box">
+        <img src="Mysql.webp" style="border-radius: 30%;">
+        <span>MySQL</span>
+        <p>Understand MySQL to manage and manipulate data efficiently.</p>
+        <button onclick="openModal4()">View Syllabus</button>
+      </div>
+
+      <div class="feature-box">
+        <img src="os.png" style="width: 45px; height: 45px;">
+        <span>Operating System</span>
+        <p>Learn OS concepts like processes, memory, and file management.</p>
+        <button onclick="openModal7()">View Syllabus</button>
+      </div>
+
+      <div class="feature-box">
+        <img src="linux.webp" style="width: 40px; height: 40px;">
+        <span>Linux</span>
+        <p>Learn Linux commands, file system, and shell basics.</p>
+        <button onclick="openModal9()">View Syllabus</button>
+      </div>
+
+      <div class="feature-box">
+        <img src="dt.png" style="width: 35px; height: 35px;">
+        <span>Digital Techniques </span>
+        <p>Learn logic gates, number systems, and digital circuits.</p>
+        <button onclick="openModal10()">View Syllabus</button>
+      </div>
+
+    </div>
+  </div>
+
+  <section class="about" id="about">
+    <div class="container">
+      <h2>About Us</h2>
+      <p>Together Academy is a dedicated coding institute focused on helping students build strong programming skills
+        through practical, project-based learning. With expert instructors and a student-friendly approach, we make
+        coding easy to understand and career-oriented. Our mission is to empower every learner with the knowledge and
+        confidence needed to succeed in the tech industry — no magic, only logic!.</p>
+    </div>
+  </section>
+
+  <!-- Why Choose Together Academy Section -->
+  <section class="why-choose">
+    <h2>Why Choose Together Academy?</h2>
+    <div class="choose-grid">
+      <div class="choose-box">
+        <i class="fas fa-book-open"></i>
+        <p>Lecture-wise Notes Provided</p>
+      </div>
+      <div class="choose-box">
+        <i class="fas fa-laptop-code"></i>
+        <p>Only write Code in your Notebook </p>
+      </div>
+      <div class="choose-box">
+        <i class="fas fa-tools"></i>
+        <p>100% Practical with Live Coding</p>
+      </div>
+      <div class="choose-box">
+        <i class="fas fa-user-graduate"></i>
+        <p>Personalized Mentorship & Career Support</p>
+      </div>
+      <div class="choose-box">
+        <i class="fas fa-wallet"></i>
+        <p>Affordable Fees & Flexible Batches</p>
+      </div>
+      <div class="choose-box">
+        <i class="fas fa-chalkboard-teacher"></i>
+        <p>Hands-on Learning from Experts</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="testimonials" id="testimonials">
+    <div class="container">
+      <h2>What Our Students Say</h2>
+      <p>"Best coding institute! Concepts are explained in very simple ways." - <strong>Rohit</strong></p>
+      <p>"Together Academy helped me build strong coding fundamentals. The hands-on practice is excellent!" - <strong>Priya</strong></p>
+      <p>"The mentors here are very friendly and always ready to solve doubts. I feel more confident in programming now." - <strong>Ankit</strong></p>
+      <p>"Great learning environment with real-world project exposure. Highly recommend for beginners!" - <strong>Sneha</strong></p>
+      <p>"Supportive faculty and amazing environment!" - <strong>Rahul</strong></p>
+    </div>
+  </section>
+
+  <section id="enquiry">
+    <div class="container">
+      <h2>Enquiry</h2>
+      <form action="https://api.web3forms.com/submit" method="POST">
+        <input type="hidden" name="access_key" value="a76cdf7c-dad6-4a2a-a1d9-09b2a71bdb48">
+        <input type="text" name="text" placeholder="Your Name" required style="padding:10px;width:100%;margin-bottom:10px;">
+        <input type="number" name="number" placeholder="Your Mobile Number" style="padding:10px;width:100%;margin-bottom:10px;">
+        <input type="email" name="email" placeholder="Your Email" required style="padding:10px;width:100%;margin-bottom:10px;">
+        <textarea name="message" placeholder="Your Message" rows="5" style="padding:10px;width:100%;margin-bottom:10px;"></textarea>
+        <button type="submit"
+          style="padding:10px 20px;background:#004080;color:white;border:none;cursor:pointer;">Send</button>
+      </form>
+    </div>
+  </section>
+
+  <!-- The Modal c prog-->
+  <div id="myModal" class="modal">
+    <div class="modal-content">
+      <span class="close" onclick="closeModal()">&times;</span>
+      <h2>Syllabus of C Programming </h2>
+      <ul>
+        <li><b>Unit-I : </b>Basics of C Programming</li>
+        <li><b>Unit-II : </b>Control structures</li>
+        <li><b>Unit-III : </b>Arrays and structure</li>
+        <li><b>Unit-IV : </b>Functions</li>
+        <li><b>Unit-V : </b>Pointers</li>
+      </ul>
+    </div>
+  </div>
+
+  <!-- The Modal c++ prog-->
+  <div id="myModal1" class="modal1">
+    <div class="modal-content1">
+      <span class="close1" onclick="closeModal1()">&times;</span>
+      <h2>Syllabus of C++ Language</h2>
+      <ul>
+        <li><b>Unit-I : </b>Principles of Object Oriented Programming</li>
+        <li><b>Unit-II : </b>Functions and Constructors</li>
+        <li><b>Unit-III : </b>Extending classes using Inheritance</li>
+        <li><b>Unit-IV : </b>Pointers and Polymorphism in C++</li>
+        <li><b>Unit-V : </b>File operations</li>
+      </ul>
+    </div>
+  </div>
+
+  <!-- The Modal  java +adv java prog-->
+  <div id="myModal2" class="modal2">
+    <div class="modal-content2">
+      <span class="close2" onclick="closeModal2()">&times;</span>
+      <h2>Syllabus of Java & adv Java</h2>
+      <ul>
+        <li><b>Unit-I : </b>Basic Syntactical Constructs in Java</li>
+        <li><b>Unit-II : </b>Inheritance, Interface and Packages</li>
+        <li><b>Unit-III : </b>Exception Handling and Multithreading</li>
+        <li><b>Unit-IV : </b>Event handling using Abstract Window Toolkit (AWT) & Swings Components</li>
+        <li><b>Unit-V : </b>Basics of Network Programming</li>
+        <li><b>Unit-VI : </b>Interacting with Database</li>
+      </ul>
+    </div>
+  </div>
+
+  <!-- The Modal  python+adv pythonprog-->
+  <div id="myModal3" class="modal3">
+    <div class="modal-content3">
+      <span class="close3" onclick="closeModal3()">&times;</span>
+      <h2>Syllabus of Python & adv Python</h2>
+      <ul>
+        <li><b>Unit-I : </b>Introduction to Python and Control flow statements</li>
+        <li><b>Unit-II : </b>Data Structures in Python</li>
+        <li><b>Unit-III : </b>Functions, Modules and Packages in Python</li>
+        <li><b>Unit-IV : </b>Object Oriented Programming in Python</li>
+        <li><b>Unit-V : </b>Introduction to Built-in Packages in Python</li>
+      </ul>
+    </div>
+  </div>
+
+  <!-- The Modal  MySql prog-->
+  <div id="myModal4" class="modal4">
+    <div class="modal-content4">
+      <span class="close4" onclick="closeModal4()">&times;</span>
+      <h2>Syllabus of MySQL</h2>
+     <ul>
+        <li><b>Unit-I : </b>Introduction to DBMS and MySQL</li>
+        <li><b>Unit-II : </b>MySQL Database Basics</li>
+        <li><b>Unit-III : </b>Querying the Database</li>
+        <li><b>Unit-IV : </b>Advanced SQL Features</li>
+        <li><b>Unit-V : </b>Database Administration and Security</li>
+      </ul>
+    </div>
+  </div>
+
+  <!-- The Modal  html / css  prog-->
+  <div id="myModal5" class="modal5">
+    <div class="modal-content5">
+      <span class="close5" onclick="closeModal5()">&times;</span>
+      <h2>Syllabus of HTML & CSS</h2>
+      <ul>
+        <li><b>Unit-I : </b>Introduction to HTML</li>
+        <li><b>Unit-II : </b>Lists and Links</li>
+        <li><b>Unit-III : </b>Images, Colors and Background</li>
+        <li><b>Unit-IV : </b>Table, Frames and Forms</li>
+        <li><b>Unit-V : </b>Cascading Style sheets</li>
+    </div>
+  </div>
+
+  <!-- The Modal  javascript prog-->
+  <div id="myModal6" class="modal6">
+    <div class="modal-content6">
+      <span class="close6" onclick="closeModal6()">&times;</span>
+      <h2>Syllabus of javaScript</h2>
+    <ul>
+        <li><b>Unit-I : </b>Introduction to JavaScript</li>
+        <li><b>Unit-II : </b>Control Structures and Functions</li>
+        <li><b>Unit-III : </b>Arrays and Objects</li>
+        <li><b>Unit-IV : </b>DOM Manipulation and Events</li>
+        <li><b>Unit-V : </b>Advanced JavaScript Concepts</li>
+      </ul>
+    </div>
+  </div>
+
+  <!-- The Modal os  prog-->
+  <div id="myModal7" class="modal7">
+    <div class="modal-content7">
+      <span class="close7" onclick="closeModal7()">&times;</span>
+      <h2>Syllabus of Operatintg System</h2>
+      <ul>
+        <li><b>Unit-I : </b>Operating System services and components  </li>
+        <li><b>Unit-II : </b>Process Management</li>
+        <li><b>Unit-III : </b>CPU Scheduling</li>
+        <li><b>Unit-IV : </b>Memory Management</li>
+        <li><b>Unit-V : </b>File Management</li>
+      </ul>
+    </div>
+  </div>
+
+  <!-- The Modal dbms -->
+  <div id="myModal8" class="modal8">
+    <div class="modal-content8">
+      <span class="close8" onclick="closeModal8()">&times;</span>
+      <h2>Syllabus of Database Management System</h2>
+      <ul>
+        <li><b>Unit-I : </b>Introduction To Database System</li>
+        <li><b>Unit-II : </b>Relational Data Model</li>
+        <li><b>Unit-III : </b>Interactive SQL and Performance Tuning</li>
+        <li><b>Unit-IV : </b>PL/SQL Programming</li>
+        <li><b>Unit-V : </b>Database Administration</li>
+      </ul>
+    </div>
+  </div>
+
+  <!-- The Modal Linux  prog-->
+  <div id="myModal9" class="modal9">
+    <div class="modal-content9">
+      <span class="close9" onclick="closeModal9()">&times;</span>
+      <h2>Syllabus of Linux</h2>
+      <ul>
+        <li><b>Unit-I : </b>Introduction to Linux Operating System</li>
+        <li><b>Unit-II : </b>General Purpose Utilities</li>
+        <li><b>Unit-III : </b>File Management in Linux</li>
+        <li><b>Unit-IV : </b>The vi Editor and Shell</li>
+        <li><b>Unit-V : </b>Filters, Regular Expressions and Shell Programming</li>
+      </ul>
+    </div>
+  </div>
+
+  <!-- The Modal dt prog-->
+  <div id="myModal10" class="modal10">
+    <div class="modal-content10">
+      <span class="close10" onclick="closeModal10()">&times;</span>
+      <h2>Syllabus of digital techniques</h2>
+      <ul>
+        <li><b>Unit-I : </b>Number Systems</li>
+        <li><b>Unit-II : </b>Logic Gates and Boolean Algebra</li>
+        <li><b>Unit-III : </b>Combinational Logic Circuits</li>
+        <li><b>Unit-IV : </b>Sequential Logic Circuits</li>
+        <li><b>Unit-V : </b>Data Converters and Memories</li>
+      </ul>
+    </div>
+  </div>
+
+  <footer>
+    <a href="https://wa.me/7020716215" target="_blank" style="position:fixed;bottom:20px;right:20px;z-index:1000;">
+      <img src="https://img.icons8.com/color/48/000000/whatsapp--v1.png" alt="Chat on WhatsApp" style="height:50px;">
+    </a>
+    <p>&copy; 2025 Together Academy. All rights reserved.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+
+</html>
