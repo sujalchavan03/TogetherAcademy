@@ -194,3 +194,19 @@ function openModal() {
       closeModal10();
     }
   }
+
+  // Allow only numbers in the mobile field
+  document.getElementById('mobileNumber').addEventListener('input', function (e) {
+    this.value = this.value.replace(/[^0-9]/g, '');
+  });
+
+  // Final validation on submit
+  document.getElementById('enquiryForm').addEventListener('submit', function (e) {
+    const mobile = document.getElementById('mobileNumber').value;
+    const regex = /^[6-9][0-9]{9}$/;
+
+    if (!regex.test(mobile)) {
+      alert("Please enter a valid 10-digit mobile number starting with 6-9.");
+      e.preventDefault();
+    }
+  });
