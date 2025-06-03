@@ -596,6 +596,4 @@
     margin: 0 auto; /* centers the list horizontally */
     text-align: center; /* centers the text inside <li> */ 
   }
-.text{
-    text-align: justify;
-  }
+  
