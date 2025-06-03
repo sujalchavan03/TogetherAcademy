@@ -151,27 +151,41 @@
   <section class="testimonials" id="testimonials">
     <div class="container">
       <h2>What Our Students Say</h2>
-      <p>"Best coding institute! Concepts are explained in very simple ways." - <strong>Rohit</strong></p><br>
-      <p>"Together Academy helped me build strong coding fundamentals. The hands-on practice is excellent!" - <strong>Priya</strong></p><br>
-      <p>"Great learning environment with real-world project exposure. Highly recommend for beginners!" - <strong>Sneha</strong></p><br>
+      <p>"Best coding institute! Concepts are explained in very simple ways." - <strong>Rohit</strong></p>
+      <p>"Together Academy helped me build strong coding fundamentals. The hands-on practice is excellent!" - <strong>Priya</strong></p>
+      <p>"The mentors here are very friendly and always ready to solve doubts. I feel more confident in programming now." - <strong>Ankit</strong></p>
+      <p>"Great learning environment with real-world project exposure. Highly recommend for beginners!" - <strong>Sneha</strong></p>
       <p>"Supportive faculty and amazing environment!" - <strong>Rahul</strong></p>
     </div>
   </section>
 
   <section id="enquiry">
-    <div class="container">
-      <h2>Enquiry</h2>
-      <form action="https://api.web3forms.com/submit" method="POST">
-        <input type="hidden" name="access_key" value="a76cdf7c-dad6-4a2a-a1d9-09b2a71bdb48">
-        <input type="text" name="text" placeholder="Your Name" required style="padding:10px;width:100%;margin-bottom:10px;">
-        <input type="number" name="number" placeholder="Your Mobile Number" style="padding:10px;width:100%;margin-bottom:10px;">
-        <input type="email" name="email" placeholder="Your Email" required style="padding:10px;width:100%;margin-bottom:10px;">
-        <textarea name="message" placeholder="Your Message" rows="5" style="padding:10px;width:100%;margin-bottom:10px;"></textarea>
-        <button type="submit"
-          style="padding:10px 20px;background:#004080;color:white;border:none;cursor:pointer;">Send</button>
-      </form>
-    </div>
-  </section>
+  <div class="container">
+    <h2>Enquiry</h2>
+    <form id="enquiryForm" action="https://api.web3forms.com/submit" method="POST">
+      <input type="hidden" name="access_key" value="a76cdf7c-dad6-4a2a-a1d9-09b2a71bdb48">
+
+      <input type="text" name="text" placeholder="Your Name" required
+        style="padding:10px;width:100%;margin-bottom:10px;">
+
+      <input type="tel" name="number" id="mobileNumber" placeholder="Your Mobile Number"
+        pattern="[6-9]{1}[0-9]{9}"
+        title="Enter a valid 10-digit Indian mobile number starting with 6-9"
+        required
+        maxlength="10"
+        style="padding:10px;width:100%;margin-bottom:10px;">
+
+      <input type="email" name="email" placeholder="Your Email" required
+        style="padding:10px;width:100%;margin-bottom:10px;">
+
+      <textarea name="message" placeholder="Your Message" rows="5"
+        style="padding:10px;width:100%;margin-bottom:10px;"></textarea>
+
+      <button type="submit"
+        style="padding:10px 20px;background:#004080;color:white;border:none;cursor:pointer;">Send</button>
+    </form>
+  </div>
+</section>
 
   <!-- The Modal c prog-->
   <div id="myModal" class="modal">
@@ -339,7 +353,7 @@
   </div>
 
   <footer>
-    <a href="https://wa.me/7020716215?text=Can%20I%20get%20more%20info%20about%20Together%20Academy%20courses%3F" target="_blank" style="position:fixed;bottom:20px;right:20px;z-index:1000;">
+    <a href="https://wa.me/7020716215" target="_blank" style="position:fixed;bottom:20px;right:20px;z-index:1000;">
       <img src="https://img.icons8.com/color/48/000000/whatsapp--v1.png" alt="Chat on WhatsApp" style="height:50px;">
     </a>
     <p>&copy; 2025 Together Academy. All rights reserved.</p>
